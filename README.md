@@ -18,3 +18,8 @@ node index file.bmp flag
 -g OR green: leave only the green channel
 -G OR gray : apply grayscale transform
 -i OR invert OR no selection (default) : inverts all color values
+
+
+
+
+#### Bitmasters is a collaboration between Gene Troy, Ben Harding and Kristopher Skelton.
