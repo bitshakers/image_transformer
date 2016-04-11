@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/bitshakers/image_transformer#readme",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.7.0",
     "gulp": "^3.9.1",
     "gulp-eslint": "^2.0.0",
     "gulp-mocha": "^2.2.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "mocha": "^2.4.5"
   }
 }
