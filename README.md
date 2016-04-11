@@ -9,7 +9,11 @@
 ###Use
 From the command line
 
-node index file.bmp flag
+node index flag file.bmp
+
+(pikachu.bmp is the default file)
+
+Output files are returned to the /images directory.
 
 ###Flag options:
 * -r OR red  : leave only the red channel
