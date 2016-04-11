@@ -1,3 +1,4 @@
+'use strict';
 var bitmap = require(__dirname + '/../lib/transforms.js');
 var headerOutput = require(__dirname + '/../lib/header_data.js');
 var expect = require('chai').expect;
