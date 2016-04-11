@@ -3,8 +3,8 @@ var headerOutput = require(__dirname + '/../lib/header_data.js');
 var expect = require('chai').expect;
 
 
-describe('image conversion to buffer', function () {
-  it('should show a new buffer was created', function () {
+describe('image conversion to buffer', function () => {
+  it('should show a new buffer was created', function () => {
     expect(Buffer.isBuffer(headerOutput)).to.eql(true);
   });
 });
@@ -21,14 +21,14 @@ describe('image conversion to buffer', function () {
 // });
 
 
-describe('buffer conversion to object', function () {
-  it('will convert buffer header data into a Javascript Object', function () {
+describe('buffer conversion to object', function () => {
+  it('will convert buffer header data into a Javascript Object', function () => {
     expect(typeof headerOutput.bitmapHeaders === 'object').to.eql(true);
   });
 });
 
 // test for transforming a non-pallette bitmap
-describe('a non-pallette bitmap conversion', function(){
+describe('a non-pallette bitmap conversion', function() => {
   it('transform a non-pallette', function(){
     var flipbuf = new Buffer('FFFFFF00', 'hex');
     var highbuffer = new Buffer('00000000', 'hex');
@@ -39,7 +39,7 @@ describe('a non-pallette bitmap conversion', function(){
   });
 });
 
-describe('writing the transform to a new file', function () {
+describe('writing the transform to a new file', function () => {
   var oldCount;
   var newCount;
   before(function(done) {
@@ -47,7 +47,7 @@ describe('writing the transform to a new file', function () {
     oldCount = oldlist.length;
     done();
   });
-  it('should show we have a new file made', function () {
+  it('should show we have a new file made', function () => {
     var newList = fs.readdirSync(__dirname + '/../images');
     newCount = newList.length;
     expect(newCount).to.eql(oldCount + 1);
@@ -59,15 +59,15 @@ it('will run from a command line interface that can select the transform')
 
 
 //bonus test, running a transform on Tyler's pallete bitmap
-describe('bitmap.flip using a pallette bitmap', function(){
-  it('will run a color transform on a pallette bitmap', function(){
+describe('bitmap.flip using a pallette bitmap', function() => {
+  it('will run a color transform on a pallette bitmap', function() => {
     expect();
   });
 });
 
 //bonus test, running a transform on a non-bm image
-describe('bitmap.flip using a non-bm image', function(){
-  it('will run a color transform on a non-bm image', function(){
+describe('bitmap.flip using a non-bm image', function() => {
+  it('will run a color transform on a non-bm image', function() => {
     expect();
   });
 });
