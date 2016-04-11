@@ -9,9 +9,15 @@
 ###Use
 From the command line
 
-node index flag file.bmp
+.bin/index.js flag yourFile.bmp
 
-(pikachu.bmp is the default file)
+Copy/paste the following example:
+.bin/index.js
+
+(pikachu.bmp is the default file, green is the default transform. This produces green-scaled pikachu to /images directory.)
+
+.bin/index.js -r
+(produces red-scaled pikachu to /images directory.)
 
 Output files are returned to the /images directory.
 
@@ -22,7 +28,12 @@ Output files are returned to the /images directory.
 * -G OR gray : apply grayscale transform
 * -i OR invert OR no selection (default) : inverts all color values
 
-
-
+###Provided images:
+bumblebee.bmp
+fractalSmall.bmp
+mushrooms.bmp
+palette-bitmap.bmp
+non-palette-bitmap.bmp
+pikachu.bmp
 
 #### Bitmasters is a collaboration between Gene Troy, Ben Harding and Kristopher Skelton.
