@@ -9,14 +9,14 @@
 ###Use
 From the command line
 
-.bin/index.js flag yourFile.bmp
+./bin/index.js flag yourFile.bmp
 
 Copy/paste the following example:
-.bin/index.js
+./bin/index.js
 
 (pikachu.bmp is the default file, green is the default transform. This produces green-scaled pikachu to /images directory.)
 
-.bin/index.js -r
+./bin/index.js -r
 (produces red-scaled pikachu to /images directory.)
 
 Output files are returned to the /images directory.
