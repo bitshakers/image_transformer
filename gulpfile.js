@@ -15,7 +15,7 @@ gulp.task('watch-mocha', function() {
 
 var files = ['**', '**/*'];
 
-gulp.task('lint', function(){
+gulp.task('lint', function() {
   return gulp.src(files)
   .pipe(eslint())
   .pipe(eslint.format());
