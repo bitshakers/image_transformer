@@ -29,11 +29,11 @@ Output files are returned to the /images directory.
 * -i OR invert OR no selection (default) : inverts all color values
 
 ###Provided images:
-bumblebee.bmp
-fractalSmall.bmp
-mushrooms.bmp
-palette-bitmap.bmp
-non-palette-bitmap.bmp
-pikachu.bmp
+* bumblebee.bmp
+* fractalSmall.bmp
+* mushrooms.bmp
+* palette-bitmap.bmp
+* non-palette-bitmap.bmp
+* pikachu.bmp
 
 #### Bitmasters is a collaboration between Gene Troy, Ben Harding and Kristopher Skelton.
